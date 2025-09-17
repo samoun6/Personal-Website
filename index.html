@@ -3,44 +3,130 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samaneh Tajalizadehkhoob</title>
-  
-  <!-- Google Fonts: Lora -->
+  <title>Samaneh Tajalizadehkhoob — Notes on Living</title>
+  <meta name="description" content="A very simple personal page about who I am, what I believe, and ideas I’m exploring." />
+
+  <!-- Typography: Lora only, calm and readable -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Minimal, non-commercial, quiet */
+    :root{
+      --bg:#ffffff; --fg:#0b0c10; --muted:#6b7280; --rule:#e5e7eb; --link:#111827;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0c10; --fg:#e7ebee; --muted:#9aa0a6; --rule:#1f2937; --link:#e7ebee; }
+    }
 
-  <meta name="description" content="Tech & security thought leader — policy, ML, privacy.">
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg); }
+    body{ font:17px/1.65 'Lora', Georgia, serif; }
+    a{ color:var(--link); text-underline-offset:3px; }
+
+    .wrap{ max-width:780px; margin:0 auto; padding:28px 20px 56px; }
+    header{ padding:16px 0 8px; }
+    h1{ font-size:34px; margin:0 0 6px; }
+    h2{ font-size:22px; margin:28px 0 8px; }
+    p{ margin:10px 0; }
+    hr{ border:0; border-top:1px solid var(--rule); margin:22px 0; }
+
+    /* Quote blocks */
+    blockquote{ margin:12px 0; padding-left:14px; border-left:2px solid var(--rule); color:var(--muted); }
+    cite{ display:block; font-size:14px; color:var(--muted); margin-top:6px; }
+
+    /* Lists */
+    ul{ padding-left:20px; }
+    li{ margin:8px 0; }
+
+    /* Footer */
+    footer{ margin-top:40px; color:var(--muted); font-size:14px; }
+  </style>
 </head>
 <body>
-  <header class="wrap">
-    <nav>
-      <a class="logo" href="/">ST</a>
-      <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#writing">Writing</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-
-    <div class="hero">
-      <h1>Samaneh Tajalizadehkhoob</h1>
-      <p class="tagline">Tech & security thought leader — policy × ML × privacy</p>
-      <p class="lead">
-        Director of SSR Research. I build data-driven systems to measure and mitigate DNS abuse 
-        and help multi-stakeholder communities make better decisions.
-      </p>
-    </div>
-  </header>
-
   <main class="wrap">
-    <!-- Work Section -->
-    <section id="work">
-      <h2>Selected Work</h2>
-      <ul class="cards">
-        <li>
-          <h3>Domain Metrica</h3>
-          <p>Next-gen measurement platform for DNS abuse & Internet identifiers.</p>
+    <header>
+      <h1>My name is Samaneh Tajalizadehkhoob</h1>
+      <p style="color:var(--muted); margin-top:6px;">Notes on living. Quiet page. No CV.</p>
+    </header>
+
+    <hr>
+
+    <!-- About / Essence -->
+    <section id="about">
+      <h2>About</h2>
+      <p>I am curious about how systems shape people, and how people shape systems. I care about clarity, privacy, and kindness with boundaries. I’m learning to choose peace over drama, and depth over speed.</p>
+      <p>Where I come from: a mix of research, security, and policy work; a love of data and language; running and tennis when my head needs fresh air; a soft spot for good coffee and simple design.</p>
+    </section>
+
+    <section id="nickname">
+      <h2>Nick name</h2>
+      <ul>
+        <li>Samounk</li>
+        <li>STK</li>
+      </ul>
+    </section>
+
+    <section id="philosophy">
+      <h2>Life philosophy</h2>
+      <ul>
+        <li><strong>Truth before comfort.</strong> If it hurts but it’s true, it’s still a gift.</li>
+        <li><strong>Boundaries are kindness.</strong> To others and to myself.</li>
+        <li><strong>Attention is a currency.</strong> I spend it on what grows me, not what drains me.</li>
+        <li><strong>Movement over rumination.</strong> Walk, write, ship; don’t spiral.</li>
+        <li><strong>Privacy is dignity.</strong> I choose what to reveal, and to whom.</li>
+        <li><strong>Measure, then moralize.</strong> When in doubt, look for the signal, not the noise.</li>
+        <li><strong>Love ≠ sacrifice of self.</strong> Connection should expand me, not erase me.</li>
+      </ul>
+    </section>
+
+    <section id="propositions">
+      <h2>Propositions I’m testing</h2>
+      <ul>
+        <li>Small daily rituals beat occasional big efforts.</li>
+        <li>Most anxiety is an action cue: do the next simple thing.</li>
+        <li>Closeness requires boundaries; without them, resentment grows.</li>
+        <li>Data changes minds slower than stories—so pair them.</li>
+        <li>Silence after clarity is self-respect.</li>
+        <li>If I’m unsure, I sleep on it; if I’m excited in the morning, I proceed.</li>
+      </ul>
+    </section>
+
+    <section id="quotes">
+      <h2>Favorite quotes</h2>
+      <blockquote>
+        “Between stimulus and response there is a space. In that space is our power to choose our response.”
+        <cite>— often attributed to Viktor Frankl</cite>
+      </blockquote>
+      <blockquote>
+        “What you are looking for is what is looking.”
+        <cite>— attributed to St. Francis of Assisi</cite>
+      </blockquote>
+      <blockquote>
+        “The wound is the place where the Light enters you.”
+        <cite>— commonly attributed to Rumi</cite>
+      </blockquote>
+      <p style="color:var(--muted);">(I’ll keep a rotating list here.)</p>
+    </section>
+
+    <section id="now">
+      <h2>Now</h2>
+      <p>Practicing stillness. Writing short notes. Choosing better inputs: fewer screens, more pages, real walks, real friends.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@samounk.world">hello@samounk.world</a></p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Samaneh Tajalizadehkhoob — a simple page about being alive.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
